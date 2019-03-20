@@ -135,7 +135,6 @@ export default class GiphySelect extends Component {
           theme={theme}
           items={this.state.items}
           renderEntry={renderEntry}
-          showBigThumbnails={showBigThumbnails}
           onEntrySelect={onEntrySelect}
           loadNextPage={this.loadNextPage}
         />
