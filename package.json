@@ -1,14 +1,14 @@
 {
   "name": "react-giphy-select",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React component for select GIFs on GIPHY.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "npm run build:clean && npm run build:lib",
+    "build": "yarn run build:clean && yarn run build:lib",
     "build:lib": "babel src -d lib --ignore test.js",
     "build:clean": "rimraf lib",
     "lint": "eslint ./",
-    "version": "npm run build",
+    "version": "yarn run build",
     "start": "webpack-dev-server",
     "test": "jest --verbose",
     "test:watch": "jest --verbose --watch",
