@@ -103,7 +103,7 @@ export default class GiphySelect extends Component {
     this._totalCount = response.pagination.total_count;
   }
 
-  _setInputRef(input) {
+  _setInputRef = input => {
     this.input = input
   }
 
@@ -120,7 +120,7 @@ export default class GiphySelect extends Component {
   _activeFetch = false;
 
   render() {
-    const { placeholder, renderEntry, autoFocus, onEntrySelect } = this.props;
+    const { placeholder, renderEntry, onEntrySelect } = this.props;
     const theme = this._theme;
 
     return (
