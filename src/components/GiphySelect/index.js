@@ -37,13 +37,10 @@ export default class GiphySelect extends Component {
     items: [],
   };
 
-  componentDidMount() {
-    this._fetchItems();
-  }
-
   shouldComponentUpdate = () => !this._activeFetch;
 
   componentDidMount() {
+    this._fetchItems();
     setImmediate(() => {
       if (this.input && this.props.autoFocus) {
         this.input.focus()
