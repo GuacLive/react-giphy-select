@@ -23,11 +23,10 @@ const common = {
           loader: 'babel-loader',
           options: {
             presets: [
-              ['env', { modules: false }],
-              'stage-0',
-              'react',
+              ['@babel/preset-env', { modules: false }],
+              '@babel/preset-react',
             ],
-            plugins: [reactHotLoader],
+            plugins: [reactHotLoader, '@babel/plugin-proposal-class-properties', '@babel/plugin-proposal-export-default-from'],
             babelrc: false,
           },
         }],
@@ -51,7 +50,6 @@ const common = {
     ],
   },
   plugins: [
-    new webpack.NamedModulesPlugin(),
   ],
   resolve: {
     alias: {

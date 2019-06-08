@@ -1,10 +1,12 @@
 {
   "presets": [
-    "env",
-    "stage-0",
-    "react"
+    "@babel/preset-env",
+    "@babel/preset-react"
   ],
   "plugins": [
+   "@babel/plugin-proposal-class-properties",
+   "@babel/plugin-proposal-export-default-from",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
     ["css-modules-transform", {
       "generateScopedName": "react-giphy-select__[path][name]__[local]___[hash:base64:5]",
       "extractCss": "./lib/styles.css"

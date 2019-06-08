@@ -37,7 +37,7 @@ export default class GiphySelect extends Component {
     items: [],
   };
 
-  componentWillMount() {
+  componentDidMount() {
     this._fetchItems();
   }
 
