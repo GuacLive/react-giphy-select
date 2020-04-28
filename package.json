@@ -1,5 +1,5 @@
 {
-  "name": "react-giphy-select",
+  "name": "@guaclive/react-giphy-select",
   "version": "1.0.6",
   "description": "A React component for select GIFs on GIPHY.",
   "main": "lib/index.js",
