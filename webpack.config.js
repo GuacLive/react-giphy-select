@@ -65,14 +65,14 @@ if (process.env.NODE_ENV === 'production') {
     },
     plugins: [
       new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify('production')
+        'process.env.NODE_ENV': JSON.stringify('production'),
       }),
       new webpack.optimize.UglifyJsPlugin(),
       new CopyPlugin([
         {
           from: resolve(docsDir, 'index.html'),
-          to: resolve(docsDistDir, 'index.html')
-        }
+          to: resolve(docsDistDir, 'index.html'),
+        },
       ]),
     ],
   });

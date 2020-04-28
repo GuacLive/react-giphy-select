@@ -71,14 +71,19 @@ export default class App extends Component {
             href="https://giphy.com/terms"
             rel="noopener noreferrer"
             target="_blank"
-          >terms of service</a>.
+          >
+            terms of service
+          </a>
+          .
         </p>
 
         <h2 className={styles.appHeader2}>Installation</h2>
         <SyntaxHighlighter
           language="bash"
           style={tomorrowNightEighties}
-        >{installationCode}</SyntaxHighlighter>
+        >
+          {installationCode}
+        </SyntaxHighlighter>
 
         <h2 className={styles.appHeader2}>Usage</h2>
         <p>
@@ -88,19 +93,27 @@ export default class App extends Component {
         <SyntaxHighlighter
           language="bash"
           style={tomorrowNightEighties}
-        >{stylesCode}</SyntaxHighlighter>
+        >
+          {stylesCode}
+        </SyntaxHighlighter>
         <p>
           You will need&nbsp;
           <a
             href="https://webpack.js.org/"
             rel="noopener noreferrer"
             target="_blank"
-          >Webpack</a> or other build system, that supports requiring css files.
+          >
+            Webpack
+          </a>
+          {' '}
+          or other build system, that supports requiring css files.
         </p>
         <SyntaxHighlighter
           language="javascript"
           style={tomorrowNightEighties}
-        >{usageCode}</SyntaxHighlighter>
+        >
+          {usageCode}
+        </SyntaxHighlighter>
 
         <h2 className={styles.appHeader2}>Props</h2>
         <dl className={styles.appProps}>
@@ -157,19 +170,22 @@ export default class App extends Component {
           <dt className={styles.appPropsName}>placeholder</dt>
           <dd className={styles.appPropsDesc}>
             Search input placeholder&nbsp;
-            <em className={styles.appPropsDefault}>(by default &quot;Search GIFs&quot;)</em>.
+            <em className={styles.appPropsDefault}>(by default &quot;Search GIFs&quot;)</em>
+            .
           </dd>
           <dt className={styles.appPropsName}>requestDelay</dt>
           <dd className={styles.appPropsDesc}>
             Delay before sending a request after the search input value is changed&nbsp;
-            <em className={styles.appPropsDefault}>(by default 500 ms)</em>.
+            <em className={styles.appPropsDefault}>(by default 500 ms)</em>
+            .
           </dd>
           <dt className={styles.appPropsName}>requestKey</dt>
           <dd className={styles.appPropsDesc}>
             Key for Giphy API&nbsp;
             <em className={styles.appPropsDefault}>
               (by default is used public beta key &quot;dc6zaTOxFJmzC&quot;)
-            </em>.
+            </em>
+            .
           </dd>
           <dt className={styles.appPropsName}>requestLang</dt>
           <dd className={styles.appPropsDesc}>
@@ -179,21 +195,29 @@ export default class App extends Component {
               href="https://github.com/Giphy/GiphyAPI#language-support"
               rel="noopener noreferrer"
               target="_blank"
-            >here</a>.
+            >
+              here
+            </a>
+            .
           </dd>
           <dt className={styles.appPropsName}>requestRating</dt>
           <dd className={styles.appPropsDesc}>
             Limit results to those rated (y,g, pg, pg-13 or r)&nbsp;
-            <em className={styles.appPropsDefault}>(by default &quot;pg&quot;)</em>.
+            <em className={styles.appPropsDefault}>(by default &quot;pg&quot;)</em>
+            .
           </dd>
           <dt className={styles.appPropsName}>renderEntry</dt>
           <dd className={styles.appPropsDesc}>
             You can rewrite default&nbsp;
-            <code className={styles.appCode}>renderEntry</code> method
+            <code className={styles.appCode}>renderEntry</code>
+            {' '}
+            method
             <SyntaxHighlighter
               language="javascript"
               style={tomorrowNightEighties}
-            >{renderEntryCode}</SyntaxHighlighter>
+            >
+              {renderEntryCode}
+            </SyntaxHighlighter>
             <dl className={styles.appSubParams}>
               <dt className={styles.appSubParamsName}>entry</dt>
               <dd className={styles.appSubParamsDesc}>
@@ -201,7 +225,9 @@ export default class App extends Component {
               </dd>
               <dt className={styles.appSubParamsName}>onSelect</dt>
               <dd className={styles.appSubParamsDesc}>
-                <code className={styles.appCode}>onEntrySelect</code> callback.
+                <code className={styles.appCode}>onEntrySelect</code>
+                {' '}
+                callback.
               </dd>
               <dt className={styles.appSubParamsName}>options</dt>
               <dd className={styles.appSubParamsDesc}>
@@ -217,7 +243,9 @@ export default class App extends Component {
             <SyntaxHighlighter
               language="javascript"
               style={tomorrowNightEighties}
-            >{onEntrySelectCode}</SyntaxHighlighter>
+            >
+              {onEntrySelectCode}
+            </SyntaxHighlighter>
             <dl className={styles.appSubParams}>
               <dt className={styles.appSubParamsName}>entry</dt>
               <dd className={styles.appSubParamsDesc}>
@@ -232,12 +260,16 @@ export default class App extends Component {
         <SyntaxHighlighter
           language="bash"
           style={tomorrowNightEighties}
-        >{contributingCode}</SyntaxHighlighter>
+        >
+          {contributingCode}
+        </SyntaxHighlighter>
         <p>Do not forget about tests and lint check</p>
         <SyntaxHighlighter
           language="bash"
           style={tomorrowNightEighties}
-        >{testCode}</SyntaxHighlighter>
+        >
+          {testCode}
+        </SyntaxHighlighter>
         <p>Please, create issues and pull requests.</p>
 
         <h2 className={styles.appHeader2}>License</h2>
