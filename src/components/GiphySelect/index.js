@@ -6,6 +6,8 @@ import styles from './styles.css';
 
 export default class GiphySelect extends Component {
   constructor(props) {
+    super(props);
+    const { theme } = props;
     this.state = {
       items: [],
     };
@@ -22,6 +24,9 @@ export default class GiphySelect extends Component {
     this._query = '';
     this._requestTimer = null;
     this._offset = 0;
+    this._totalCount = 0;
+    this._activeFetch = false;
+  }
 
   componentDidMount() {
     const { autoFocus } = this.props;
